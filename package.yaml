@@ -1,0 +1,22 @@
+name:                haskell-gitpod-template
+version:             0.1.0.0
+github:              "github.com/eirikm/haskell-gitpod-template"
+license:             AllRightsReserved
+author:              "Eirik Meland"
+maintainer:          "eirik.meland@gmail.com"
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  dependencies:
+    - text
+
+tests:
+  haskell-gitpod-template-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+    - haskell-gitpod-template
+    - hspec
