@@ -14,9 +14,21 @@ data Step = Step
     }
     deriving (Eq, Show)
 
-newtype Build = Build
+data Build = Build
     { pipeline :: Pipeline
+    , state :: BuildState
     }
+    deriving (Eq, Show)
+
+data BuildState 
+    = BuildReady
+    | BuildRunning
+    | BuildFinnished BuildResult
+    deriving (Eq, Show)
+
+data BuildResult 
+    = BuildSucceeded
+    | BuildFailed
     deriving (Eq, Show)
 
 newtype StepName = StepName Text
