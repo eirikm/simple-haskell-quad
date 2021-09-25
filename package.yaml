@@ -10,25 +10,25 @@ default-extensions:
   - StrictData
 
 dependencies:
-  - aeson
-  - async
-  - base
-  - butcher
-  - hslogger
-  - http-client
-  - http-conduit
-  - http-types
-  - network
+  # - aeson
+  # - async
+  # - base
+  # - butcher
+  # - hslogger
+  # - http-client
+  # - http-conduit
+  # - http-types
+  # - network
   - record-dot-preprocessor
   - record-hasfield
   - rio
-  - scotty
-  - serialise
-  - stm
-  - time
-  - typed-process
-  - wai-cors
-  - yaml
+  # - scotty
+  # - serialise
+  # - stm
+  # - time
+  # - typed-process
+  # - wai-cors
+  # - yaml
 
 ghc-options:
   - -F -pgmF=record-dot-preprocessor
