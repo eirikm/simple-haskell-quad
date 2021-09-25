@@ -1,22 +1,53 @@
-name:                haskell-gitpod-template
-version:             0.1.0.0
-github:              "github.com/eirikm/haskell-gitpod-template"
-license:             AllRightsReserved
-author:              "Eirik Meland"
-maintainer:          "eirik.meland@gmail.com"
+name: quad
+
+default-extensions:
+  - BlockArguments
 
 dependencies:
-- base >= 4.7 && < 5
+  - aseon
+  - async
+  - base
+  - butcher
+  - hslogger
+  - http-client
+  - http-conduit
+  - http-types
+  - network
+  - record-hasfield
+  - record-hasfield
+  - scotty
+  - serialise
+  - stm
+  - time
+  - typed-process
+  - wai-cors
+  - yaml
+
+ghc-options:
+  - -F -pgmF=record-dot-processor
 
 library:
   source-dirs: src
-  dependencies:
-    - text
+
+executables:
+  quad: 
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - quad
 
 tests:
-  haskell-gitpod-template-test:
-    main:                Spec.hs
-    source-dirs:         test
+  quad-test:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options: 
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - haskell-gitpod-template
-    - hspec
+      - quad
+      - hspec
