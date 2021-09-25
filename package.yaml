@@ -12,7 +12,7 @@ default-extensions:
 dependencies:
   # - aeson
   # - async
-  # - base
+  - base
   # - butcher
   # - hslogger
   # - http-client
