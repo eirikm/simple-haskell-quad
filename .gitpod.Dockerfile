@@ -1,1 +1,1 @@
-FROM belseboob/gitpod-haskell:1.0
+FROM belseboob/gitpod-haskell-with-docker:1.2

@@ -3,6 +3,7 @@ image:
 tasks:
   - init: |
       cabal update
+      cabal v2-update
       stack build
 
     command: |
@@ -10,4 +11,4 @@ tasks:
 
 vscode:
   extensions:
-    - haskell.haskell@1.6.1
+    - haskell.haskell
