@@ -21,6 +21,7 @@ dependencies:
   - network
   - record-dot-preprocessor
   - record-hasfield
+  - rio
   - scotty
   - serialise
   - stm
@@ -30,7 +31,7 @@ dependencies:
   - yaml
 
 ghc-options:
-  - -F -pgmF=record-dot-processor
+  - -F -pgmF=record-dot-preprocessor
 
 library:
   source-dirs: src
