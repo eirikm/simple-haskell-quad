@@ -2,6 +2,12 @@ name: quad
 
 default-extensions:
   - BlockArguments
+  - DeriveAnyClass
+  - DeriveGeneric
+  - LambdaCase
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - StrictData
 
 dependencies:
   - aeson
@@ -13,7 +19,7 @@ dependencies:
   - http-conduit
   - http-types
   - network
-  - record-hasfield
+  - record-dot-preprocessor
   - record-hasfield
   - scotty
   - serialise
