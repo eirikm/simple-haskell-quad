@@ -10,4 +10,4 @@ tasks:
 
 vscode:
   extensions:
-    - haskell.haskell
+    - haskell.haskell@1.6.1
