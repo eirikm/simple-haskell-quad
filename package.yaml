@@ -15,8 +15,8 @@ dependencies:
   - base
   # - butcher
   # - hslogger
-  # - http-client
-  # - http-conduit
+  - http-client
+  - http-conduit
   # - http-types
   # - network
   - record-dot-preprocessor
